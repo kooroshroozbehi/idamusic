@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <section id="home" className="home-section">
       <div className="home-content">
-        <h1>Welcome to Ida Music</h1>
+        <h1>Welcome to Ida Music!</h1>
         <p>
           Learn to play the piano with confidence and joy through structured lessons tailored to your goals and experience level. 
           We offer in-home and in-studio classes for students of all ages, from beginners to advanced players. 
