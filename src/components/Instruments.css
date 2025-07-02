@@ -1,0 +1,294 @@
+.instrument-section {
+  position: relative;
+  padding: 100px 20px;
+  background: linear-gradient(to top, #f8f8f8, #f1f5fb);
+  text-align: center;
+  overflow: hidden;
+  /* required for background animation containment */
+}
+
+.instrument-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.instrument-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+  /* Ensure content stays above background */
+}
+
+.instrument-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.instrument-card:hover {
+  transform: translateY(-5px);
+}
+
+.instrument-image {
+  height: 180px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.instrument-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.instrument-card h3 {
+  margin-bottom: 0.8rem;
+  color: #333;
+}
+
+.instrument-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Floating notes background */
+.note-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.note-background span {
+  position: absolute;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.5);
+  animation: floatNote 8s linear infinite alternate;
+  user-select: none;
+}
+
+/* Spread notes randomly */
+.note-background span:nth-child(1) {
+  left: 5%;
+  animation-delay: 0s;
+}
+
+.note-background span:nth-child(2) {
+  left: 15%;
+  animation-delay: 1s;
+}
+
+.note-background span:nth-child(3) {
+  left: 25%;
+  animation-delay: 2s;
+}
+
+.note-background span:nth-child(4) {
+  left: 35%;
+  animation-delay: 3s;
+}
+
+.note-background span:nth-child(5) {
+  left: 45%;
+  animation-delay: 4s;
+}
+
+.note-background span:nth-child(6) {
+  left: 55%;
+  animation-delay: 5s;
+}
+
+.note-background span:nth-child(7) {
+  left: 65%;
+  animation-delay: 6s;
+}
+
+.note-background span:nth-child(8) {
+  left: 75%;
+  animation-delay: 7s;
+}
+
+.note-background span:nth-child(9) {
+  left: 85%;
+  animation-delay: 8s;
+}
+
+.note-background span:nth-child(10) {
+  left: 95%;
+  animation-delay: 9s;
+}
+
+.note-background span:nth-child(11) {
+  left: 10%;
+  animation-delay: 10s;
+}
+
+.note-background span:nth-child(12) {
+  left: 20%;
+  animation-delay: 11s;
+}
+
+.note-background span:nth-child(13) {
+  left: 30%;
+  animation-delay: 12s;
+}
+
+.note-background span:nth-child(14) {
+  left: 40%;
+  animation-delay: 13s;
+}
+
+.note-background span:nth-child(15) {
+  left: 50%;
+  animation-delay: 14s;
+}
+
+.note-background span:nth-child(16) {
+  left: 60%;
+  animation-delay: 15s;
+}
+
+.note-background span:nth-child(17) {
+  left: 70%;
+  animation-delay: 16s;
+}
+
+.note-background span:nth-child(18) {
+  left: 80%;
+  animation-delay: 17s;
+}
+
+.note-background span:nth-child(19) {
+  left: 90%;
+  animation-delay: 18s;
+}
+
+.note-background span:nth-child(20) {
+  left: 0%;
+  animation-delay: 19s;
+}
+
+.note-background span:nth-child(21) {
+  left: 12%;
+  animation-delay: 20s;
+}
+
+.note-background span:nth-child(22) {
+  left: 22%;
+  animation-delay: 21s;
+}
+
+.note-background span:nth-child(23) {
+  left: 32%;
+  animation-delay: 22s;
+}
+
+.note-background span:nth-child(24) {
+  left: 42%;
+  animation-delay: 23s;
+}
+
+.note-background span:nth-child(25) {
+  left: 52%;
+  animation-delay: 24s;
+}
+
+.note-background span:nth-child(26) {
+  left: 62%;
+  animation-delay: 25s;
+}
+
+.note-background span:nth-child(27) {
+  left: 72%;
+  animation-delay: 26s;
+}
+
+.note-background span:nth-child(28) {
+  left: 82%;
+  animation-delay: 27s;
+}
+
+.note-background span:nth-child(29) {
+  left: 92%;
+  animation-delay: 28s;
+}
+
+.note-background span:nth-child(30) {
+  left: 2%;
+  animation-delay: 29s;
+}
+
+
+
+
+
+@keyframes floatNote {
+  0% {
+    top: 0%;
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    top: 90%;
+    transform: translateY(100%) rotate(360deg);
+    opacity: 1;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .note-background span {
+    position: absolute;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.5);
+    animation: floatNote 15s linear infinite alternate;
+    user-select: none;
+  }
+
+  @keyframes floatNote {
+    0% {
+      top: 0%;
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+
+    10% {
+      opacity: 1;
+    }
+
+    90% {
+      opacity: 1;
+    }
+
+    100% {
+      top: 95%;
+      transform: translateY(100%) rotate(360deg);
+      opacity: 1;
+    }
+  }
+
+}

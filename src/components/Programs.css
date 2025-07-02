@@ -1,0 +1,99 @@
+.programs-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(to top, #f1f5fb, #f8f8f8 ); 
+  text-align: center;
+}
+
+.programs-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.program-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-6px);
+}
+
+.program-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.program-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #333;
+}
+
+.program-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Price Section Styling */
+.price {
+  margin-top: 0.5rem;
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.price strong {
+  color: #000;
+}
+
+.price em {
+  color: green;
+}
+
+
+.price-columns {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.price-option {
+  width: 50%;
+  padding: 0 1rem;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.price-option strong {
+  color: #000;
+}
+
+.price-option em {
+  color: green;
+}
+
+.vertical-divider {
+  width: 1px;
+  background-color: #ccc;
+  height: auto;
+  align-self: stretch;
+}

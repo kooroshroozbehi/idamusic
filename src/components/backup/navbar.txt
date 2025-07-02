@@ -1,0 +1,56 @@
+.logo-image {
+  height: 100px;         /* fixed height */
+  width: 150px;         /* increased width */
+  object-fit: fill;     /* stretches the image to fill width and height */
+}
+
+
+
+
+
+import React, { useEffect, useState } from 'react';
+import './Navbar.css';
+import logo from './logo.png';
+
+const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50); // adjust as needed
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return (
+    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+      <div className="logo">
+        <img src={logo} alt="Ida Music Logo" className="logo-image" />
+        
+      </div>
+      <ul className="navList">
+        <li className="nav-item" onClick={() => scrollToSection('home')}>Home</li>
+        <li className="nav-item" onClick={() => scrollToSection('about')}>About</li>
+        <li className="nav-item" onClick={() => scrollToSection('instruments')}>Instruments</li>
+        <li className="nav-item" onClick={() => scrollToSection('programs')}>Programs</li>
+        <li className="nav-item" onClick={() => scrollToSection('contact')}>Contact</li>
+      </ul>
+    </nav>
+  );
+};
+
+export default Navbar;
+
+
+
+
+

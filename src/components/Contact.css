@@ -1,0 +1,42 @@
+.contact-section {
+  padding: 100px 20px;
+  background: linear-gradient(to top, #f8f8f8, #f1f5fb); 
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #222;
+  font-family: 'Playfair Display', serif;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.contact-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #fff;
+  padding: 1.2rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact-box p {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  stroke: #444;
+  flex-shrink: 0;
+}
